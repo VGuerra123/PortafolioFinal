@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply text-white font-sans antialiased overflow-x-hidden;
+    background-image: none;
+  }
+  ::selection {
+    @apply bg-primary-500/30 text-white;
+  }
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary-400 ring-offset-2 ring-offset-dark-300;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-glass-200 backdrop-blur-lg border border-white/10 rounded-xl;
+  }
+  .glass-panel-hover {
+    @apply transition-all duration-300 hover:bg-glass-300 hover:border-primary-500/30 hover:shadow-neon;
+  }
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400;
+  }
+  .text-edge-outline {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+  }
+  .glass-button {
+    @apply px-6 py-3 glass-panel glass-panel-hover text-white font-medium rounded-full;
+  }
+  .section-container {
+    @apply container mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24 lg:py-32;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-gradient;
+  }
+  .section-subtitle {
+    @apply text-xl text-gray-300 max-w-3xl mx-auto mb-12 md:mb-16 leading-relaxed;
+  }
+}
+
+/* Custom cursor */
+.custom-cursor {
+  @apply fixed w-6 h-6 rounded-full border-2 border-primary-500 pointer-events-none z-50 transition-transform duration-150 ease-out transform -translate-x-1/2 -translate-y-1/2;
+}
+.custom-cursor--active {
+  @apply scale-150 bg-primary-500/20;
+}
+
+/* Scroll progress */
+.fixed.top-0.left-0.w-full.h-1.z-50 > div {
+  @apply bg-gradient-to-r from-primary-500 via-secondary-500 to-accent-500;
+}
+
+/* Horizontal scroll utility */
+.horizontal-scroll {
+  @apply overflow-x-auto scrollbar-hide pb-4;
+  scroll-snap-type: x mandatory;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animación “estrellas” y blobs */
+@keyframes stars {
+  from { background-position: 0 0; }
+  to   { background-position: -10000px 5000px; }
+}
+@keyframes blob {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50%     { transform: translate(30px, -20px) scale(1.1); }
+}
+
+/* Utilidades extra (Tailwind permite clases arbitrarias, pero por claridad...) */
+.animate-blob            { animation: blob 20s infinite alternate; }
+.animation-delay-2000    { animation-delay: 2s; }
+
