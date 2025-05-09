@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X, Sun, Moon, Github, Linkedin, Twitter, MapPin, Thermometer } from 'lucide-react';
 import { contactInfo } from '../lib/data';
-import logo from '../../public/assets/logo.png';
+import logo from '../../public/assets/logo.webp';
 import { useLocation } from 'react-router-dom';
 
 interface HeaderProps {

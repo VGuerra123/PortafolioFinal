@@ -59,7 +59,7 @@ const Contact = () => {
             className="flex flex-col items-center gap-8"
           >
             <motion.img
-              src="/assets/Contact/fox-avatar-contact.png"
+              src="/assets/Contact/fox-avatar-contact.webp"
               alt="Avatar Zorro"
               className="w-40 h-40 md:w-52 md:h-52 rounded-full shadow-2xl border-4 border-gradient-to-tr from-primary-400 to-secondary-500"
               animate={{ y: [0, -10, 0] }}
