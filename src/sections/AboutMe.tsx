@@ -60,17 +60,19 @@ const AboutMe: React.FC = () => {
             {/* Texto y datos */}
             <motion.div variants={itemVariants} className="flex-1 order-2 lg:order-1">
               <div className="glass-panel p-6 sm:p-8 md:p-10">
-                <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed">
-                Soy Víctor Guerra Zavala. Analista de Sistemas y Desarrollador Web con una trayectoria académica y profesional diversa. Entre 2018 y 2019 me desempeñé como ayudante en el Departamento de Matemáticas y Ciencias de la Computación de la Universidad de Santiago de Chile, colaborando en la preparación de materiales didácticos, revisión de controles, clases teóricas y prácticas, y tutorías personalizadas para estudiantes de pregrado. En 2018 y 2019 mantuve activa una Web de Ayudantías, con resumenes, ejercicios resueltos y propuestos, modelos de controles y pruebas para practicar,etc. Fue reconocida por el DMCC y publicada en la web oficial http://calculo1.dmcc.usach.cl/ para ser utilizada como herramienta educativa para todas las secciones inscritas en las asignaturas de Cálculo en particular. 
+                <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed text-center">
+                  Soy Víctor Guerra Zavala, Analista de Sistemas y Desarrollador Web con una trayectoria diversa en ámbitos académicos y profesionales.
                   <br /><br />
-                  Posteriormente, desde 2020 hasta 2022, amplié mi labor como ayudante en la Facultad de Economía de la misma universidad, donde inicié realizando clases Online, preparando material didáctico de calidad, relizando reuniones, colaborando en revisión de controles y preparación de preguntas para controles y pruebas de las asignaturas matemáticas para estudiantes de pregrado.  
+                  Entre 2018 y 2019 trabajé como ayudante en el Departamento de Matemáticas y Ciencias de la Computación de la Universidad de Santiago de Chile, donde preparé materiales didácticos, revisé controles y di tutorías personalizadas. Además, mantuve activa una plataforma web de apoyaturas en Cálculo (calculo1.dmcc.usach.cl), reconocida por el DMCC como recurso oficial para sus asignaturas.
                   <br /><br />
-                  Realicé mi práctica profesional como desarrollador web en Neurona Global Services, donde colaboré en la creación de la página web oficial de Neurona y realicé cursos de certificación partner de AWS y de IBM. Construimos en equipo un MVP de la app Howe, una aplicación lúdica para niños que enseña emociones y ofrece un coloreo interactivo; en este proyecto me desempeñé principalmente en el desarrollo del frontend y colaboré en algunas de las demás funcionalidades.
+                  De 2020 a 2022 seguí mi labor como ayudante, esta vez en la Facultad de Economía, impartiendo clases online, elaborando contenido de calidad y diseñando evaluaciones para estudiantes de pregrado.
                   <br /><br />
-                  Además, trabajé como operador multifuncional en un Pronto Copec, desempeñándome como cajero, en cocina y en el mantenimiento de espacios. Esta experiencia me permitió desarrollar habilidades esenciales en atención al cliente, trabajo bajo presión, comunicación efectiva, trabajo en equipo, resiliencia y compromiso.
+                  En mi práctica profesional en Neurona Global Services, contribuí al desarrollo del frontend de su sitio web, obtuve certificaciones partner de AWS e IBM, y colaboré en la creación del MVP de “Howe”, una app lúdica para el aprendizaje emocional en niños.
                   <br /><br />
-                  La combinación de mi experiencia docente, mi formación en desarrollo web y mi trabajo en atención al cliente me ha brindado una visión integral que fusiona rigor académico, prácticas de ingeniería de software y sólidas habilidades interpersonales. Me considero un profesional versátil y comprometido con la excelencia en proyectos de educación, tecnología y servicio.
-                </p> 
+                  También trabajé como operador multifuncional en Pronto Copec, desempeñándome en caja, cocina y mantenimiento, donde fortalecí mis habilidades en atención al cliente, trabajo bajo presión y comunicación efectiva.
+                  <br /><br />
+                  Esta combinación de experiencia docente, desarrollo web y servicio al cliente me brinda una visión integral, fusionando rigor académico, buenas prácticas de ingeniería y sólidas competencias interpersonales. Soy un profesional versátil, comprometido con la excelencia en proyectos de educación, tecnología y servicio.
+                </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
                   <div className="flex items-center">
@@ -89,7 +91,7 @@ const AboutMe: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-white text-sm sm:text-base">Años de Academia</h3>
-                      <p className="text-gray-300 text-xs sm:text-sm">2017 - 2024</p>
+                      <p className="text-gray-300 text-xs sm:text-sm">2017 – 2024</p>
                     </div>
                   </div>
 
@@ -122,7 +124,7 @@ const AboutMe: React.FC = () => {
                 <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 mb-4">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary-500 to-secondary-500 opacity-20 animate-pulse-slow" />
                   <img
-                    src="public/assets/aboutMe/Profile_.webp"
+                    src="assets/Hero/Profile2.png"
                     alt="Víctor Guerra"
                     className="w-full h-full object-cover rounded-full border-2 border-white"
                   />
